@@ -55,7 +55,7 @@ public class PassengersQueue
             if(isEmpty()) front = rear = -1;
             else
             {
-                if (front == max - 1);
+                if (front == max - 1) rear = 0;
                 else front++;
             }
         }
