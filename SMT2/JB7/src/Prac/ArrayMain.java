@@ -1,4 +1,5 @@
-package Prac;
+package JB7.src.Prac;
+
 
 import java.util.Scanner;
 

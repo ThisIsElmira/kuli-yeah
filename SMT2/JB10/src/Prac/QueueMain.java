@@ -1,4 +1,4 @@
-package Prac;
+package JB10.src.Prac;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Prac;
+package JB10.src.Prac;
 
 public class PassengersQueue
 {
@@ -62,12 +62,6 @@ public class PassengersQueue
         return data;
     }
 
-    void peek()
-    {
-        if (!isEmpty()) System.out.println("The first element : " + Q[front].name + " " + Q[front].cityOrigin + " " + Q[front].cityDestination + " " + Q[front].ticketAmount + " " + Q[front].price);
-        else System.out.println("Queue is still empty");
-    }
-
     void print()
     {
         if (isEmpty()) System.out.println("Queue is still empty");
@@ -76,12 +70,24 @@ public class PassengersQueue
             int i = front;
             while(i != rear)
             {
-                System.out.println("The first element : " + Q[front].name + " " + Q[front].cityOrigin + " " + Q[front].cityDestination + " " + Q[front].ticketAmount + " " + Q[front].price);
+                System.out.println(Q[front].name + " " + Q[front].cityOrigin + " " + Q[front].cityDestination + " " + Q[front].ticketAmount + " " + Q[front].price);
                 i = (i + 1) % max;
             }
-            System.out.println(Q[i] + " ");
+//            System.out.println(Q[i] + " ");
             System.out.println("Element amount : " + size);
         }
+    }
+
+    void peekRear()
+    {
+        if (!isEmpty()) System.out.println("The last element : " + Q[rear].name + " " + Q[rear].cityOrigin + " " + Q[rear].cityDestination + " " + Q[rear].ticketAmount + " " + Q[rear].price);
+        else System.out.println("Queue is still empty");
+    }
+
+    void peek()
+    {
+        if (!isEmpty()) System.out.println("The first element : " + Q[front].name + " " + Q[front].cityOrigin + " " + Q[front].cityDestination + " " + Q[front].ticketAmount + " " + Q[front].price);
+        else System.out.println("Queue is still empty");
     }
 
     void clear()

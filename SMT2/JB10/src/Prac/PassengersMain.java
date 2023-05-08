@@ -1,4 +1,4 @@
-package Prac;
+package JB10.src.Prac;
 
 import java.util.Scanner;
 
@@ -11,6 +11,8 @@ public class PassengersMain
         System.out.println("2. Dequeue");
         System.out.println("3. Check first queue");
         System.out.println("4. Check all queue");
+        System.out.println("5. Clear queue");
+        System.out.println("6. Check last queue");
         System.out.println("===========================");
     }
 
@@ -51,16 +53,19 @@ public class PassengersMain
                     if (!"".equals(data.name) && !"".equals(data.cityOrigin) && !"".equals(data.cityDestination) && !"".equals(data.ticketAmount) && !"".equals(data.price)) System.out.println("Data removed : " + data.name + " " + data.cityOrigin + " " + data.cityDestination + " " + data.ticketAmount + " " + data.price);
                     break;
                 case 3:
-                    queuePassenger.print();
+                    queuePassenger.peek();
                     break;
                 case 4:
-                    queuePassenger.peek();
+                    queuePassenger.print();
                     break;
                 case 5:
                     queuePassenger.clear();
                     break;
+                case 6:
+                    queuePassenger.peekRear();
+                    break;
             }
         }
-        while(choose <= 4 && choose >= 1);
+        while(choose <= 6 && choose >= 1);
     }
 }
