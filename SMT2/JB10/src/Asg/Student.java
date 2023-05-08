@@ -1,4 +1,4 @@
-package Asg;
+package JB10.src.Asg;
 
 public class Student
 {

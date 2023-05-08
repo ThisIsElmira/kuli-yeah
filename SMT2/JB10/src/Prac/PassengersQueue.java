@@ -70,9 +70,10 @@ public class PassengersQueue
             int i = front;
             while(i != rear)
             {
-                System.out.println(Q[front].name + " " + Q[front].cityOrigin + " " + Q[front].cityDestination + " " + Q[front].ticketAmount + " " + Q[front].price);
+                System.out.println(Q[i].name + " " + Q[i].cityOrigin + " " + Q[i].cityDestination + " " + Q[i].ticketAmount + " " + Q[i].price);
                 i = (i + 1) % max;
             }
+            System.out.println(Q[rear].name + " " + Q[rear].cityOrigin + " " + Q[rear].cityDestination + " " + Q[rear].ticketAmount + " " + Q[rear].price);
 //            System.out.println(Q[i] + " ");
             System.out.println("Element amount : " + size);
         }
