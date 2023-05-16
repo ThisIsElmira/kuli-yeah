@@ -1,13 +1,19 @@
 package JB11.Asg;
 
-public class Node
+public class Node<TData>
 {
-    int data;
-    Node next;
+    public TData value;
+    public Node<TData> next;
 
-    public Node (int data, Node next)
+    public Node(TData value)
     {
-        this.data = data;
+        this.value = value;
+        this.next = null;
+    }
+
+    public Node(TData value, Node<TData> next)
+    {
+        this.value = value;
         this.next = next;
     }
 }
