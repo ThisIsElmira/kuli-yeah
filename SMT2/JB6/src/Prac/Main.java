@@ -1,4 +1,4 @@
-package Prac;
+package JB6.src.Prac;
 import java.util.Scanner;
 public class Main
 {

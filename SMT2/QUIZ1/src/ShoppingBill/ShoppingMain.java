@@ -1,4 +1,4 @@
-package ShoppingBill;
+package QUIZ1.src.ShoppingBill;
 
 public class ShoppingMain
 {

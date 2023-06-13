@@ -1,4 +1,4 @@
-package Prac;
+package JB6.src.Prac;
 
 public class HighAchieverStudent
 {
@@ -29,7 +29,7 @@ public class HighAchieverStudent
 
     void bubbleSort()
     {
-        for (int i = 0; i< list.length-1; i++)
+        for (int i = 0; i < list.length-1; i++)
         {
             for (int j = 1; j < list.length-i; j++)
             {

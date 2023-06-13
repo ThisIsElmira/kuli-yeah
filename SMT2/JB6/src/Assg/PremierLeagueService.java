@@ -1,6 +1,4 @@
-package Assg;
-
-import Prac.Students;
+package JB6.src.Assg;
 
 public class PremierLeagueService
 {

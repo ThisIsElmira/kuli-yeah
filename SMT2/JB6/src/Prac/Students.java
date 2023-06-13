@@ -1,4 +1,4 @@
-package Prac;
+package JB6.src.Prac;
 
 public class Students
 {

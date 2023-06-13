@@ -1,4 +1,4 @@
-package Assg;
+package JB6.src.Assg;
 
 import java.util.Scanner;
 
