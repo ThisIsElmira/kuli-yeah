@@ -26,7 +26,7 @@ public class SingleLinkedList
         else System.out.println("Linked list is empty!");
     }
 
-    void addFirst(int input)
+    public void addFirst(int input)
     {
         Node ndInput = new Node(input, null);
         if (isEmpty())
